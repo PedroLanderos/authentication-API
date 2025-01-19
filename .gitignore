@@ -10,3 +10,6 @@
 *.dbmdl
 # Archivos temporales de Visual Studio
 .vsidx
+# Ignorar carpetas de compilación
+**/obj/
+**/bin/
