@@ -1,0 +1,12 @@
+# Archivos de Visual Studio
+.vs/
+.idea/
+.vscode/
+# Archivos de configuración específicos del usuario
+*.user
+*.userosscache
+*.suo
+*.userprefs
+*.dbmdl
+# Archivos temporales de Visual Studio
+.vsidx
