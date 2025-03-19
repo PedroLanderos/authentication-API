@@ -5,29 +5,43 @@ services:
       context: .
       dockerfile: AuthenticationApi.Solution/AuthenticationApi.Presentation/Dockerfile
     ports:
-      - "5000:80" # Mapea el puerto 5000 del host al puerto 80 del contenedor
+      - "5000:5000" # Mapea el puerto 5000 del host al puerto 80 del contenedor
     depends_on:
-      - db
+      - sqlserver
     environment:
-      - ASPNETCORE_ENVIRONMENT=Development # Configuración del entorno, opcional
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://0.0.0.0:5000
+    networks:
+      - my_network
+    restart: on-failure
 
-  db:
+  sqlserver:
     image: mcr.microsoft.com/mssql/server:2022-latest
-    ports:
-      - "1434:1433" # Mapea el puerto 1434 del host al puerto 1433 del contenedor
     environment:
-      ACCEPT_EULA: "Y"
       SA_PASSWORD: "Lancort20+12"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlvolume:/var/opt/mssql 
+    networks:
+      - my_network
 
   tests:
     build:
       context: .
       dockerfile: AuthenticationApi.Solution/UnitTest.AuthenticationApi/Dockerfile
     depends_on:
-      - db
+      - sqlserver
     volumes:
       - ./TestResults:/src/AuthenticationApi.Solution/UnitTest.AuthenticationApi/TestResults # Guarda resultados
     entrypoint: >
       sh -c "
       dotnet test --logger:trx
       "
+networks:
+  my_network:
+    driver: bridge
+
+volumes:
+  sqlvolume:

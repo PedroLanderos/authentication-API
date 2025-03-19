@@ -1,5 +1,8 @@
 using AuthenticationApi.Infrastructure;
+using AuthenticationApi.Infrastructure.Data;
 using AuthenticationApi.Infrastructure.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
+using System;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +16,13 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddInfrastructureService(builder.Configuration);
 
 var app = builder.Build();
+
+// Aplicar migraciones pendientes automáticamente
+using (var scope = app.Services.CreateScope())
+{
+    var context = scope.ServiceProvider.GetRequiredService<AuthenticationDbContext>();
+    context.Database.Migrate();
+}
 
 // Configure the HTTP request pipeline.
 app.UseSwagger();
