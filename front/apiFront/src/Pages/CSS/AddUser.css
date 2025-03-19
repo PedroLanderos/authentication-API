@@ -1,0 +1,150 @@
+/* 🎨 Estilos globales */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 🎯 Contenedor principal */
+.add-user {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #eff1f5, #dde2f0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+}
+
+/* 🏷️ Tarjeta del formulario */
+.add-user-container {
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+/* 📌 Título */
+.add-user-container h1 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* 📄 Campos del formulario */
+.add-user-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+/* 🔲 Inputs y Select */
+.add-user-fields input,
+.add-user-fields select {
+    height: 50px;
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border 0.3s ease-in-out;
+}
+
+.add-user-fields input:focus,
+.add-user-fields select:focus {
+    border-color: #4a90e2;
+    outline: none;
+}
+
+/* 🔽 Select con puntero */
+.add-user-fields select {
+    cursor: pointer;
+    appearance: none;
+}
+
+/* ✨ Botón */
+.add-user-container button {
+    width: 100%;
+    height: 50px;
+    background: #4a90e2;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 15px;
+}
+
+.add-user-container button:hover {
+    background: #357ABD;
+}
+
+/* ✅ Mensajes de éxito y error */
+.message {
+    margin-top: 15px;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* 📱 Responsividad */
+@media (max-width: 768px) {
+    .add-user-container {
+        padding: 30px;
+    }
+
+    .add-user-container h1 {
+        font-size: 22px;
+    }
+
+    .add-user-fields input,
+    .add-user-fields select {
+        font-size: 14px;
+        height: 45px;
+    }
+
+    .add-user-container button {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .add-user-container {
+        padding: 25px;
+    }
+
+    .add-user-container h1 {
+        font-size: 20px;
+    }
+
+    .add-user-fields input {
+        font-size: 14px;
+        height: 40px;
+    }
+
+    .add-user-container button {
+        font-size: 14px;
+        height: 45px;
+    }
+}

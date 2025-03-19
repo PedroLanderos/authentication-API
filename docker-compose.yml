@@ -27,6 +27,19 @@ services:
     networks:
       - my_network
 
+  frontend:
+    container_name: dockerwdb-frontend
+    build:
+      context: ./front/apiFront
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    depends_on:
+      - app  
+    networks:
+      - my_network
+    restart: always
+
   tests:
     build:
       context: .

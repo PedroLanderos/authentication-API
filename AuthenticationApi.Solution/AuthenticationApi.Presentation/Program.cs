@@ -15,6 +15,17 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddInfrastructureService(builder.Configuration);
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowFrontend", policy =>
+    {
+        policy.WithOrigins("http://localhost:3000") // Permite peticiones desde React
+              .AllowAnyHeader()
+              .AllowAnyMethod()
+              .AllowCredentials(); // Esto es necesario si usas `withCredentials: true` en axios
+    });
+});
+
 var app = builder.Build();
 
 // Aplicar migraciones pendientes automáticamente
@@ -29,6 +40,8 @@ app.UseSwagger();
 app.UseSwaggerUI();
 
 app.UseHttpsRedirection();
+
+app.UseCors("AllowFrontend");
 
 app.UseAuthorization();
 

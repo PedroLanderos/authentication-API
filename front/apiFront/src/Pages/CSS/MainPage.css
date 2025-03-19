@@ -1,0 +1,100 @@
+/* 🌟 Main Page Styling */
+.main-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 🎨 Fondo con gradiente animado */
+.main-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #4b6cb7, #182848);
+  z-index: -1;
+  animation: gradientAnimation 6s infinite alternate;
+}
+
+/* ✨ Animación del fondo */
+@keyframes gradientAnimation {
+  0% {
+      background: linear-gradient(135deg, #4b6cb7, #182848);
+  }
+  100% {
+      background: linear-gradient(135deg, #16222a, #3a6073);
+  }
+}
+
+/* 🔠 Título con animación */
+.main-page h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #ffcc00;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* 📄 Texto descriptivo */
+.main-page p {
+  font-size: 1.2rem;
+  color: #ddd;
+  max-width: 600px;
+  padding: 0 20px;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+/* 🚧 Ícono animado */
+.main-page::after {
+  content: "🚧";
+  font-size: 5rem;
+  display: block;
+  margin-bottom: 15px;
+  animation: bounce 1.5s infinite;
+}
+
+/* 🎬 Animación de fade-in */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* 🔄 Animación de rebote */
+@keyframes bounce {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+}
+
+/* 📱 Responsividad */
+@media (max-width: 768px) {
+  .main-page h1 {
+      font-size: 2rem;
+  }
+  
+  .main-page p {
+      font-size: 1rem;
+  }
+  
+  .main-page::after {
+      font-size: 4rem;
+  }
+}
