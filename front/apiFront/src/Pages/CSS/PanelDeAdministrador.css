@@ -1,0 +1,197 @@
+/* 🌟 Estilos generales */
+.admin-panel {
+    display: flex;
+    height: 100vh;
+    background-color: #f4f6f9;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* 🎨 Sidebar moderno */
+.sidebar {
+    width: 280px;
+    background: linear-gradient(135deg, #1e1e2f, #252547);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    transition: width 0.3s ease-in-out;
+}
+
+.sidebar h1 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #ffcc00;
+    text-align: left;
+}
+
+/* 📋 Menú */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    position: relative;
+    padding: 15px;
+    margin: 5px 0;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebar ul li:hover,
+.sidebar ul li.active {
+    background: #ffcc00;
+    color: black;
+}
+
+/* 🔻 Submenú */
+.submenu {
+    list-style: none;
+    padding: 0;
+    margin-top: 5px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
+    opacity: 0;
+}
+
+/* 🔥 Cuando el submenú esté activo, se expande */
+.submenu.show {
+    max-height: 200px;
+    opacity: 1;
+    transition: max-height 0.3s ease-in, opacity 0.3s ease-in;
+}
+
+.submenu li {
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.submenu li:hover {
+    background: #ffcc00;
+    color: black;
+}
+
+/* 📄 Contenido */
+.content {
+    flex-grow: 1;
+    padding: 40px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    overflow-y: auto;
+    transition: margin-left 0.3s ease-in-out;
+}
+
+.content h2 {
+    font-size: 26px;
+    color: #252547;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #ffcc00;
+    padding-bottom: 8px;
+}
+
+.content p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* 🔄 Mensaje de carga */
+.loading {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* 📝 Placeholder */
+.panel-placeholder {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    color: #666;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+/* 📱 Responsividad */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 220px;
+    }
+
+    .sidebar h1 {
+        font-size: 18px;
+    }
+
+    .sidebar ul li {
+        font-size: 14px;
+    }
+
+    .submenu li {
+        font-size: 12px;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .content h2 {
+        font-size: 22px;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        width: 180px;
+    }
+
+    .sidebar h1 {
+        font-size: 16px;
+    }
+
+    .sidebar ul li {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .submenu li {
+        padding: 6px 10px;
+        font-size: 10px;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    .content h2 {
+        font-size: 18px;
+    }
+
+    .content p {
+        font-size: 12px;
+    }
+}

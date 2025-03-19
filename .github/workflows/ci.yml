@@ -1,0 +1,62 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-and-test:
+    name: Build and Test
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Check out the code
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # 2. Set up .NET
+      - name: Set up .NET Core
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0' # Change this to your .NET version if needed
+
+      # 3. Restore dependencies
+      - name: Restore dependencies
+        run: dotnet restore AuthenticationApi.Solution/AuthenticationApi.Presentation/AuthenticationApi.Presentation.csproj
+
+      # 4. Build the project
+      - name: Build project
+        run: dotnet build AuthenticationApi.Solution/AuthenticationApi.Presentation/AuthenticationApi.Presentation.csproj --no-restore --configuration Release
+
+      # 5. Run unit tests
+      - name: Run tests
+        run: dotnet test AuthenticationApi.Solution/UnitTest.AuthenticationApi/UnitTest.AuthenticationApi.csproj --logger trx
+
+      # 6. Save test results
+      - name: Save test results
+        uses: actions/upload-artifact@v3
+        with:
+          name: TestResults
+          path: AuthenticationApi.Solution/UnitTest.AuthenticationApi/TestResults/
+
+  # Optional job: Deployment (example placeholder)
+  deploy:
+    name: Deploy to Production
+    needs: build-and-test
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+
+    steps:
+      # 1. Check out the code
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # 2. Deployment script or tool
+      - name: Deploy application
+        run: |
+          echo "Deploying application to production..."
+          # Add your deployment logic here (e.g., Docker, SSH, Kubernetes)

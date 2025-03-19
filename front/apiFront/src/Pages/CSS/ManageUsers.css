@@ -1,0 +1,195 @@
+/* 🎨 Estilos generales */
+.manage-users {
+  padding: 40px;
+  font-family: 'Poppins', sans-serif;
+  background: #f8f9fc;
+  min-height: 100vh;
+}
+
+/* 🏷️ Título */
+.manage-users h1 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* 📋 Contenedor de la tabla */
+.user-table-container {
+  margin: 0 auto;
+  max-width: 1100px;
+  overflow-x: auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* 📑 Tabla */
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* 🏷️ Encabezados */
+.user-table th {
+  background: #374151;
+  color: white;
+  font-weight: bold;
+  padding: 15px;
+  text-align: left;
+}
+
+/* 📄 Celdas */
+.user-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  color: #333;
+}
+
+/* 🌟 Alternar filas */
+.user-table tr:nth-child(even) {
+  background: #f8f9fc;
+}
+
+/* ✏️ Botón de editar */
+.user-table td button {
+  padding: 8px 12px;
+  background: #ff9900;
+  color: white;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.user-table td button:hover {
+  background: #ff7800;
+}
+
+/* 📝 Contenedor del formulario de edición */
+.edit-user-container {
+  margin: 30px auto;
+  max-width: 500px;
+  padding: 25px;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* ✍️ Formulario */
+.edit-user-container h2 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* 🖊️ Etiquetas */
+.edit-user-form label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+/* 🔲 Inputs */
+.edit-user-form input,
+.edit-user-form select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border 0.3s ease-in-out;
+}
+
+.edit-user-form input:focus,
+.edit-user-form select:focus {
+  border-color: #ff9900;
+  outline: none;
+}
+
+/* 🛠️ Botones */
+.edit-user-form button {
+  padding: 10px 15px;
+  margin-right: 10px;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* 💾 Botón de Guardar */
+.edit-user-form button[type="submit"] {
+  background: #4caf50;
+  color: white;
+}
+
+.edit-user-form button[type="submit"]:hover {
+  background: #43a047;
+}
+
+/* ❌ Botón de Cancelar */
+.cancel-btn {
+  background: #ff4141;
+  color: white;
+}
+
+.cancel-btn:hover {
+  background: #e33a3a;
+}
+
+/* 📱 Responsividad */
+@media (max-width: 768px) {
+  .user-table-container {
+      width: 100%;
+      overflow-x: auto;
+  }
+
+  .edit-user-container {
+      max-width: 100%;
+      padding: 20px;
+  }
+
+  .edit-user-form input,
+  .edit-user-form select {
+      padding: 10px;
+  }
+
+  .edit-user-form button {
+      padding: 8px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .manage-users {
+      padding: 20px;
+  }
+
+  .manage-users h1 {
+      font-size: 24px;
+  }
+
+  .user-table th,
+  .user-table td {
+      font-size: 14px;
+      padding: 10px;
+  }
+
+  .edit-user-form input,
+  .edit-user-form select {
+      font-size: 12px;
+  }
+
+  .edit-user-form button {
+      font-size: 12px;
+      padding: 8px;
+  }
+}

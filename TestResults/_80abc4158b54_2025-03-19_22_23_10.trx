@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="e4ce3bd7-d71c-481e-965d-76c0e81f9196" name="@80abc4158b54 2025-03-19 22:23:10" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2025-03-19T22:23:10.9582454+00:00" queuing="2025-03-19T22:23:10.9582464+00:00" start="2025-03-19T22:23:08.1025259+00:00" finish="2025-03-19T22:23:10.9879998+00:00" />
+  <TestSettings name="default" id="4ff74276-db9c-4fd1-b48e-7fa7f82245e7">
+    <Deployment runDeploymentRoot="_80abc4158b54_2025-03-19_22_23_10" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="e51ca30b-9b0d-4b25-8e8b-cec4dda42f2d" testId="aff471a6-09d5-62a4-b944-71c75bda1877" testName="UnitTest.AuthenticationApi.Controllers.AuthenticationControllerTest.GetUser_ShouldReturn404_WhenUserNotFound" computerName="80abc4158b54" duration="00:00:00.0030109" startTime="2025-03-19T22:23:10.5457439+00:00" endTime="2025-03-19T22:23:10.5457441+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e51ca30b-9b0d-4b25-8e8b-cec4dda42f2d" />
+    <UnitTestResult executionId="7c8efa71-8768-4bad-809b-5223009cdb9f" testId="dbb7acf2-a772-f299-73c4-5f6b10185266" testName="UnitTest.AuthenticationApi.Controllers.AuthenticationControllerTest.Register_ShouldReturn200_WhenSuccessful" computerName="80abc4158b54" duration="00:00:00.2491543" startTime="2025-03-19T22:23:10.5198366+00:00" endTime="2025-03-19T22:23:10.5198752+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7c8efa71-8768-4bad-809b-5223009cdb9f" />
+    <UnitTestResult executionId="370c6828-55b6-461a-908d-dbf363b9b31b" testId="8f4acd63-6b67-96f8-b8b9-a3791b4628df" testName="UnitTest.AuthenticationApi.Controllers.AuthenticationControllerTest.Login_ShouldReturn400_WhenModelStateIsInvalid" computerName="80abc4158b54" duration="00:00:00.0010688" startTime="2025-03-19T22:23:10.5422419+00:00" endTime="2025-03-19T22:23:10.5422422+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="370c6828-55b6-461a-908d-dbf363b9b31b" />
+    <UnitTestResult executionId="e54fbdd2-5274-4b56-83af-3e42691d0a00" testId="8258363d-770c-f2ef-d846-ab24b4fbaa73" testName="UnitTest.AuthenticationApi.Controllers.AuthenticationControllerTest.GetAllUsers_ShouldReturn404_WhenNoUsersFound" computerName="80abc4158b54" duration="00:00:00.0028736" startTime="2025-03-19T22:23:10.5302765+00:00" endTime="2025-03-19T22:23:10.5302767+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e54fbdd2-5274-4b56-83af-3e42691d0a00" />
+    <UnitTestResult executionId="bba79734-72e8-4d07-ad45-83094f8d23bf" testId="b6aee8ff-84ba-22d5-e72a-79cb9dcbc4f2" testName="UnitTest.AuthenticationApi.Controllers.AuthenticationControllerTest.GetAllUsers_ShouldReturn200_WhenUsersExist" computerName="80abc4158b54" duration="00:00:00.0079595" startTime="2025-03-19T22:23:10.5273083+00:00" endTime="2025-03-19T22:23:10.5273085+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bba79734-72e8-4d07-ad45-83094f8d23bf" />
+    <UnitTestResult executionId="241ce70b-e1d3-478d-bf34-6233a054752a" testId="94720c87-d34a-67ce-b7ae-5161fda0fa45" testName="UnitTest.AuthenticationApi.Controllers.AuthenticationControllerTest.GetUser_ShouldReturn200_WhenUserExists" computerName="80abc4158b54" duration="00:00:00.0015250" startTime="2025-03-19T22:23:10.5471905+00:00" endTime="2025-03-19T22:23:10.5471906+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="241ce70b-e1d3-478d-bf34-6233a054752a" />
+    <UnitTestResult executionId="e7a6a492-5c5e-41ae-bfe4-e6558ff0c57c" testId="fe63900b-113e-9325-406f-ecec5f50ce02" testName="UnitTest.AuthenticationApi.Controllers.AuthenticationControllerTest.GetUser_ShouldReturn400_WhenIdIsInvalid" computerName="80abc4158b54" duration="00:00:00.0027116" startTime="2025-03-19T22:23:10.5332892+00:00" endTime="2025-03-19T22:23:10.5332893+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e7a6a492-5c5e-41ae-bfe4-e6558ff0c57c" />
+    <UnitTestResult executionId="cb10feaa-e5d9-428a-a4eb-feaaa1566efa" testId="41e8f99e-ecc2-2ebf-6cfb-713e1a5eae0a" testName="UnitTest.AuthenticationApi.Controllers.AuthenticationControllerTest.Login_ShouldReturn200_WhenSuccessful" computerName="80abc4158b54" duration="00:00:00.0032404" startTime="2025-03-19T22:23:10.5370758+00:00" endTime="2025-03-19T22:23:10.5370760+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cb10feaa-e5d9-428a-a4eb-feaaa1566efa" />
+    <UnitTestResult executionId="5a0217ad-34ff-4453-a8ef-fefc2d6a24e8" testId="ca779d31-4ae9-af5d-2b60-60661cd3f1e1" testName="UnitTest.AuthenticationApi.Controllers.AuthenticationControllerTest.Register_ShouldReturn400_WhenModelStateIsInvalid" computerName="80abc4158b54" duration="00:00:00.0034885" startTime="2025-03-19T22:23:10.5408026+00:00" endTime="2025-03-19T22:23:10.5408028+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5a0217ad-34ff-4453-a8ef-fefc2d6a24e8" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="UnitTest.AuthenticationApi.Controllers.AuthenticationControllerTest.GetAllUsers_ShouldReturn200_WhenUsersExist" storage="/src/authenticationapi.solution/unittest.authenticationapi/bin/debug/net8.0/unittest.authenticationapi.dll" id="b6aee8ff-84ba-22d5-e72a-79cb9dcbc4f2">
+      <Execution id="bba79734-72e8-4d07-ad45-83094f8d23bf" />
+      <TestMethod codeBase="/src/AuthenticationApi.Solution/UnitTest.AuthenticationApi/bin/Debug/net8.0/UnitTest.AuthenticationApi.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="UnitTest.AuthenticationApi.Controllers.AuthenticationControllerTest" name="GetAllUsers_ShouldReturn200_WhenUsersExist" />
+    </UnitTest>
+    <UnitTest name="UnitTest.AuthenticationApi.Controllers.AuthenticationControllerTest.GetUser_ShouldReturn200_WhenUserExists" storage="/src/authenticationapi.solution/unittest.authenticationapi/bin/debug/net8.0/unittest.authenticationapi.dll" id="94720c87-d34a-67ce-b7ae-5161fda0fa45">
+      <Execution id="241ce70b-e1d3-478d-bf34-6233a054752a" />
+      <TestMethod codeBase="/src/AuthenticationApi.Solution/UnitTest.AuthenticationApi/bin/Debug/net8.0/UnitTest.AuthenticationApi.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="UnitTest.AuthenticationApi.Controllers.AuthenticationControllerTest" name="GetUser_ShouldReturn200_WhenUserExists" />
+    </UnitTest>
+    <UnitTest name="UnitTest.AuthenticationApi.Controllers.AuthenticationControllerTest.GetUser_ShouldReturn400_WhenIdIsInvalid" storage="/src/authenticationapi.solution/unittest.authenticationapi/bin/debug/net8.0/unittest.authenticationapi.dll" id="fe63900b-113e-9325-406f-ecec5f50ce02">
+      <Execution id="e7a6a492-5c5e-41ae-bfe4-e6558ff0c57c" />
+      <TestMethod codeBase="/src/AuthenticationApi.Solution/UnitTest.AuthenticationApi/bin/Debug/net8.0/UnitTest.AuthenticationApi.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="UnitTest.AuthenticationApi.Controllers.AuthenticationControllerTest" name="GetUser_ShouldReturn400_WhenIdIsInvalid" />
+    </UnitTest>
+    <UnitTest name="UnitTest.AuthenticationApi.Controllers.AuthenticationControllerTest.Login_ShouldReturn200_WhenSuccessful" storage="/src/authenticationapi.solution/unittest.authenticationapi/bin/debug/net8.0/unittest.authenticationapi.dll" id="41e8f99e-ecc2-2ebf-6cfb-713e1a5eae0a">
+      <Execution id="cb10feaa-e5d9-428a-a4eb-feaaa1566efa" />
+      <TestMethod codeBase="/src/AuthenticationApi.Solution/UnitTest.AuthenticationApi/bin/Debug/net8.0/UnitTest.AuthenticationApi.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="UnitTest.AuthenticationApi.Controllers.AuthenticationControllerTest" name="Login_ShouldReturn200_WhenSuccessful" />
+    </UnitTest>
+    <UnitTest name="UnitTest.AuthenticationApi.Controllers.AuthenticationControllerTest.Login_ShouldReturn400_WhenModelStateIsInvalid" storage="/src/authenticationapi.solution/unittest.authenticationapi/bin/debug/net8.0/unittest.authenticationapi.dll" id="8f4acd63-6b67-96f8-b8b9-a3791b4628df">
+      <Execution id="370c6828-55b6-461a-908d-dbf363b9b31b" />
+      <TestMethod codeBase="/src/AuthenticationApi.Solution/UnitTest.AuthenticationApi/bin/Debug/net8.0/UnitTest.AuthenticationApi.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="UnitTest.AuthenticationApi.Controllers.AuthenticationControllerTest" name="Login_ShouldReturn400_WhenModelStateIsInvalid" />
+    </UnitTest>
+    <UnitTest name="UnitTest.AuthenticationApi.Controllers.AuthenticationControllerTest.GetAllUsers_ShouldReturn404_WhenNoUsersFound" storage="/src/authenticationapi.solution/unittest.authenticationapi/bin/debug/net8.0/unittest.authenticationapi.dll" id="8258363d-770c-f2ef-d846-ab24b4fbaa73">
+      <Execution id="e54fbdd2-5274-4b56-83af-3e42691d0a00" />
+      <TestMethod codeBase="/src/AuthenticationApi.Solution/UnitTest.AuthenticationApi/bin/Debug/net8.0/UnitTest.AuthenticationApi.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="UnitTest.AuthenticationApi.Controllers.AuthenticationControllerTest" name="GetAllUsers_ShouldReturn404_WhenNoUsersFound" />
+    </UnitTest>
+    <UnitTest name="UnitTest.AuthenticationApi.Controllers.AuthenticationControllerTest.GetUser_ShouldReturn404_WhenUserNotFound" storage="/src/authenticationapi.solution/unittest.authenticationapi/bin/debug/net8.0/unittest.authenticationapi.dll" id="aff471a6-09d5-62a4-b944-71c75bda1877">
+      <Execution id="e51ca30b-9b0d-4b25-8e8b-cec4dda42f2d" />
+      <TestMethod codeBase="/src/AuthenticationApi.Solution/UnitTest.AuthenticationApi/bin/Debug/net8.0/UnitTest.AuthenticationApi.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="UnitTest.AuthenticationApi.Controllers.AuthenticationControllerTest" name="GetUser_ShouldReturn404_WhenUserNotFound" />
+    </UnitTest>
+    <UnitTest name="UnitTest.AuthenticationApi.Controllers.AuthenticationControllerTest.Register_ShouldReturn400_WhenModelStateIsInvalid" storage="/src/authenticationapi.solution/unittest.authenticationapi/bin/debug/net8.0/unittest.authenticationapi.dll" id="ca779d31-4ae9-af5d-2b60-60661cd3f1e1">
+      <Execution id="5a0217ad-34ff-4453-a8ef-fefc2d6a24e8" />
+      <TestMethod codeBase="/src/AuthenticationApi.Solution/UnitTest.AuthenticationApi/bin/Debug/net8.0/UnitTest.AuthenticationApi.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="UnitTest.AuthenticationApi.Controllers.AuthenticationControllerTest" name="Register_ShouldReturn400_WhenModelStateIsInvalid" />
+    </UnitTest>
+    <UnitTest name="UnitTest.AuthenticationApi.Controllers.AuthenticationControllerTest.Register_ShouldReturn200_WhenSuccessful" storage="/src/authenticationapi.solution/unittest.authenticationapi/bin/debug/net8.0/unittest.authenticationapi.dll" id="dbb7acf2-a772-f299-73c4-5f6b10185266">
+      <Execution id="7c8efa71-8768-4bad-809b-5223009cdb9f" />
+      <TestMethod codeBase="/src/AuthenticationApi.Solution/UnitTest.AuthenticationApi/bin/Debug/net8.0/UnitTest.AuthenticationApi.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="UnitTest.AuthenticationApi.Controllers.AuthenticationControllerTest" name="Register_ShouldReturn200_WhenSuccessful" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="aff471a6-09d5-62a4-b944-71c75bda1877" executionId="e51ca30b-9b0d-4b25-8e8b-cec4dda42f2d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dbb7acf2-a772-f299-73c4-5f6b10185266" executionId="7c8efa71-8768-4bad-809b-5223009cdb9f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8f4acd63-6b67-96f8-b8b9-a3791b4628df" executionId="370c6828-55b6-461a-908d-dbf363b9b31b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8258363d-770c-f2ef-d846-ab24b4fbaa73" executionId="e54fbdd2-5274-4b56-83af-3e42691d0a00" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b6aee8ff-84ba-22d5-e72a-79cb9dcbc4f2" executionId="bba79734-72e8-4d07-ad45-83094f8d23bf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="94720c87-d34a-67ce-b7ae-5161fda0fa45" executionId="241ce70b-e1d3-478d-bf34-6233a054752a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fe63900b-113e-9325-406f-ecec5f50ce02" executionId="e7a6a492-5c5e-41ae-bfe4-e6558ff0c57c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="41e8f99e-ecc2-2ebf-6cfb-713e1a5eae0a" executionId="cb10feaa-e5d9-428a-a4eb-feaaa1566efa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ca779d31-4ae9-af5d-2b60-60661cd3f1e1" executionId="5a0217ad-34ff-4453-a8ef-fefc2d6a24e8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="9" executed="9" passed="9" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.5.3.1+6b60a9e56a (64-bit .NET 8.0.14)
+[xUnit.net 00:00:00.35]   Discovering: UnitTest.AuthenticationApi
+[xUnit.net 00:00:00.49]   Discovered:  UnitTest.AuthenticationApi
+[xUnit.net 00:00:00.49]   Starting:    UnitTest.AuthenticationApi
+     Warning:
+     The component "Fluent Assertions" is governed by the rules defined in the Xceed License Agreement and
+     the Xceed Fluent Assertions Community License. You may use Fluent Assertions free of charge for
+     non-commercial use only. An active subscription is required to use Fluent Assertions for commercial use.
+     Please contact Xceed Sales mailto:sales@xceed.com to acquire a subscription at a very low cost.
+     A paid commercial license supports the development and continued increasing support of
+     Fluent Assertions users under both commercial and community licenses. Help us
+     keep Fluent Assertions at the forefront of unit testing.
+     For more information, visit https://xceed.com/products/unit-testing/fluent-assertions/
+[xUnit.net 00:00:00.91]   Finished:    UnitTest.AuthenticationApi
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>
